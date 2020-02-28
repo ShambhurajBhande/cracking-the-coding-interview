@@ -1,6 +1,7 @@
 package ctci.treeandgraph;
 /* @author Shambhuraj created on 2/21/2020*/
-
+/*Minimal Tree: Given a sorted (increasing order) array with unique integer elements, write an algorithm
+to create a binary search tree with minimal height.*/
 public class MinimalBinarySearchTree {
 
     public static void main(String[] args) {
@@ -21,7 +22,7 @@ public class MinimalBinarySearchTree {
         return treeNode;
     }
 
-    //In order  
+    //In order
     private static void printTree(TreeNode treeNode) {
         if (treeNode == null) {
             return;

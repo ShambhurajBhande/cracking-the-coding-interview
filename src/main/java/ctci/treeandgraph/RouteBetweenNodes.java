@@ -8,8 +8,7 @@ import java.util.Queue;
 
 public class RouteBetweenNodes {
     public static void main(String[] args) {
-        int length = 4;
-        Graph graph = new Graph(length);
+        Graph graph = new Graph();
 
         graph.addChildren(0, 1);
         graph.addChildren(0, 2);
@@ -18,7 +17,7 @@ public class RouteBetweenNodes {
         graph.addChildren(2, 3);
         graph.addChildren(3, 3);
 
-        boolean isRoutePresent = isRoutePresent(graph, length, 0, 3);
+        boolean isRoutePresent = isRoutePresent(graph, graph.getGraph().size(), 0, 3);
         System.out.println(isRoutePresent);
     }
 
